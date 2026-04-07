@@ -1,0 +1,31 @@
+---
+// Nav component
+---
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <a class="nav-logo" href="#">
+    <span class="nav-dot"></span>
+    Oumaima El Asri
+  </a>
+  <div class="nav-r">
+    <a href="#story" data-key="na-story">Histoire</a>
+    <a href="#skills" data-key="na-skills">Compétences</a>
+    <a href="#trajectory" data-key="na-traj">Parcours</a>
+    <a href="#projects" data-key="na-proj">Projets</a>
+    <a href="#contact" class="nav-cta" data-key="na-contact">Me contacter</a>
+    <button onclick="toggleLang()">EN</button>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mob-menu">
+  <a href="#story" onclick="closeMenu()" data-key="na-story">Histoire</a>
+  <a href="#skills" onclick="closeMenu()" data-key="na-skills">Compétences</a>
+  <a href="#trajectory" onclick="closeMenu()" data-key="na-traj">Parcours</a>
+  <a href="#projects" onclick="closeMenu()" data-key="na-proj">Projets</a>
+  <a href="#contact" onclick="closeMenu()" data-key="na-contact">Me contacter</a>
+  <button onclick="toggleLang();closeMenu()">Changer de langue → EN</button>
+</div>
