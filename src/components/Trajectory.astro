@@ -1,0 +1,28 @@
+---
+// Trajectory component
+---
+<section id="trajectory">
+  <div class="traj-hd">
+    <div class="sec-tag" style="justify-content:center;display:flex" data-key="traj-tag">PARCOURS</div>
+    <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;letter-spacing:-.025em;color:var(--text)" data-key="traj-title">Naviguer dans mon parcours</h2>
+  </div>
+  <div class="traj-scene"><canvas id="traj-canvas"></canvas></div>
+  <div class="traj-panel">
+    <div class="traj-card">
+      <div class="traj-row1">
+        <div class="traj-num" id="t-num">1</div>
+        <div class="traj-name" id="t-name"></div>
+      </div>
+      <div class="traj-meta">
+        <span class="traj-badge" id="t-badge">POINT DE TRAJECTOIRE</span>
+        <span class="traj-date" id="t-date"></span>
+      </div>
+      <div class="traj-role" id="t-role"></div>
+      <ul class="traj-bullets" id="t-bullets"></ul>
+      <div class="chips" id="t-chips"></div>
+    </div>
+    <button class="arr-btn" id="t-prev" onclick="trajNav(-1)" aria-label="Précédent">&#8592;</button>
+    <button class="arr-btn" id="t-next" onclick="trajNav(1)" aria-label="Suivant">&#8594;</button>
+  </div>
+  <div class="traj-dots" id="traj-dots"></div>
+</section>
